@@ -1,14 +1,23 @@
+/*box_m1 global*/
+
+
+
+
+/*box_m2 global*/
+
+
+/* Boxes */
+
 #conteneur_global {
 	display: flex; 
 	flex-direction: row;
-	flex-wrap: nowrap; 
+	flex-wrap: nowrap;
 }
 
 	#box_m1
 	{
 	background-color: red;   
 	min-width: 35%;
-
 	}
 
 #box_m2
@@ -32,6 +41,18 @@
 	display: none;
 	}
 
+
+.pave_xp {
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+
+
+
+
+
 @media (max-width: 600px) {
 
 	#conteneur_global {
@@ -51,9 +72,12 @@
 	}
 
 	.contact_ghost2 {
-	display: block;
-}
+		display: block;
+	}
 
+	.pave_xp { 
+		flex-direction: column;
+	}
 
 }
 
