@@ -1,0 +1,64 @@
+#conteneur_global {
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: nowrap; 
+}
+
+	#box_m1
+	{
+	background-color: red;   
+	min-width: 35%;
+
+	}
+
+#box_m2
+	{
+	background-color: green; 
+	min-width: 65%;
+	}
+
+	.img_ghost1 {
+	display: block;
+	}
+
+	.img_ghost2 {
+	display: none;
+	}
+
+	.contact_ghost1 {
+		display: block;
+	}
+	.contact_ghost2 {
+	display: none;
+	}
+
+@media (max-width: 600px) {
+
+	#conteneur_global {
+		flex-direction: column-reverse;
+	}
+
+	.img_ghost1 {
+		display: none;
+	}
+
+	.img_ghost2 {
+		display: block;
+	}
+
+	.contact_ghost1 {
+		display: none;
+	}
+
+	.contact_ghost2 {
+	display: block;
+}
+
+
+}
+
+
+
+
+
+
