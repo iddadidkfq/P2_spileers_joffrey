@@ -1,9 +1,20 @@
 /*box_m1 global*/
 
+#box_m1 h2 {
+	text-align: center;
+	background-color: black;
+	color: yellow;
+
+}
+
 
 
 
 /*box_m2 global*/
+
+#box_m2 h2 {
+
+}
 
 
 /* Boxes */
@@ -16,7 +27,7 @@
 
 	#box_m1
 	{
-	background-color: red;   
+	background-color: yellow;   
 	min-width: 35%;
 	}
 
@@ -48,9 +59,9 @@
 	flex-wrap: nowrap;
 }
 
-
-
-
+.box_m3_G {  
+	min-width: 150px;
+}
 
 
 @media (max-width: 600px) {
@@ -77,6 +88,10 @@
 
 	.pave_xp { 
 		flex-direction: column;
+	}
+
+	#conteneur_global {
+		text-align: center;
 	}
 
 }
