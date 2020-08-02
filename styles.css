@@ -1,9 +1,17 @@
+/* variable couleur jaunasse*/
+
+:root {
+	--mycolor: #FFBF00;
+}
+
+
+
 /*box_m1 global*/
 
 #box_m1 h2 {
 	text-align: center;
 	background-color: black;
-	color: yellow;
+	color: var(--mycolor);
 
 }
 
@@ -12,10 +20,22 @@
 
 /*box_m2 global*/
 
-#box_m2 h2 {
 
+.prenom {
+	font-size: 3.0em;
+	font-weight: bold;
+	color: var(--mycolor);
 }
 
+.nom {font-size: 3.0em;}
+
+.job {font-size: 1.8em;}
+
+hr
+{
+    width: 100%;
+    border: 1px solid var(--mycolor);
+}
 
 /* Boxes */
 
@@ -27,14 +47,15 @@
 
 	#box_m1
 	{
-	background-color: yellow;   
+	background-color: var(--mycolor);   
 	min-width: 35%;
 	}
 
 #box_m2
 	{
-	background-color: green; 
+	background-color: none; 
 	min-width: 65%;
+	padding: 20px 20px 20px 20px;
 	}
 
 	.img_ghost1 {
@@ -68,6 +89,7 @@
 
 	#conteneur_global {
 		flex-direction: column-reverse;
+		text-align: center;
 	}
 
 	.img_ghost1 {
@@ -90,9 +112,6 @@
 		flex-direction: column;
 	}
 
-	#conteneur_global {
-		text-align: center;
-	}
 
 }
 
