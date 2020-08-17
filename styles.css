@@ -4,21 +4,47 @@
 	--mycolor: #FFBF00;
 }
 
+#conteneur_global {
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
 
 
-/*box_m1 global*/
+#box_m1 {
+	display: flex; 
+	flex-direction: column;
+	background-color: var(--mycolor);   
+	min-width: 35%;
+
+}
+.loisirs {
+	height: 100%;
+}
+
+table {
+	height: 100%;
+	width: 100%;
+} 
+
+td {
+	height: 100%;
+	vertical-align:bottom;
+	padding: 0px ;
+} 
 
 #box_m1 h2 {
 	text-align: center;
 	background-color: black;
 	color: var(--mycolor);
-
 }
 
-
-
-
-/*box_m2 global*/
+#box_m2 {
+	background-color: none; 
+	min-width: 65%;
+	padding: 20px;
+	display: block;
+}
 
 
 .prenom {
@@ -39,39 +65,19 @@ hr
 
 /* Boxes */
 
-#conteneur_global {
-	display: flex; 
-	flex-direction: row;
-	flex-wrap: nowrap;
+
+.img_ghost2 {
+display: none;
 }
 
-	#box_m1
-	{
-	background-color: var(--mycolor);   
-	min-width: 35%;
-	}
+.contact_ghost1 {
+display: block;
+}
+.contact_ghost2 {
+display: none;
+}
 
-#box_m2
-	{
-	background-color: none; 
-	min-width: 65%;
-	padding: 20px 20px 20px 20px;
-	}
 
-	.img_ghost1 {
-	display: block;
-	}
-
-	.img_ghost2 {
-	display: none;
-	}
-
-	.contact_ghost1 {
-		display: block;
-	}
-	.contact_ghost2 {
-	display: none;
-	}
 
 
 .pave_xp {
@@ -83,6 +89,8 @@ hr
 .box_m3_G {  
 	min-width: 150px;
 }
+
+
 
 
 @media (max-width: 600px) {
