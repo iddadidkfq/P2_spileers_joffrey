@@ -1,7 +1,14 @@
-/* variable couleur jaunasse*/
+/* Globals*/
 
-:root {
-	--mycolor: #FFBF00;
+p {
+	font-family: Arial, sans-serif;
+	margin: 5px 10px 5px 10px;
+	text-align: justify; 
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #93b2e1;
 }
 
 #conteneur_global {
@@ -10,14 +17,14 @@
 	flex-wrap: nowrap;
 }
 
-
 #box_m1 {
 	display: flex; 
 	flex-direction: column;
-	background-color: var(--mycolor);   
+	background-color: #93b2e1;   
 	min-width: 35%;
 
 }
+
 .loisirs {
 	height: 100%;
 }
@@ -36,8 +43,8 @@ td {
 
 #box_m1 h2 {
 	text-align: center;
-	background-color: black;
-	color: var(--mycolor);
+	background-color:  #001b44 ;
+	color: #93b2e1;
 }
 
 #box_m2 {
@@ -47,25 +54,22 @@ td {
 	display: block;
 }
 
-
 .prenom {
 	font-size: 3.0em;
 	font-weight: bold;
-	color: var(--mycolor);
+	font-family: Arial, sans-serif;
+	color: #93b2e1;
 }
 
-.nom {font-size: 3.0em;}
+.nom {font-size: 3.0em;
+	font-family: Arial, sans-serif;}
 
 .job {font-size: 1.8em;}
 
-hr
-{
-    width: 100%;
-    border: 1px solid var(--mycolor);
-}
+.icons2 {width: 20px; height: 20px;}
 
-/* Boxes */
 
+/* Boxes Unswitch */
 
 .img_ghost2 {
 display: none;
@@ -74,12 +78,10 @@ display: none;
 .contact_ghost1 {
 display: block;
 }
+
 .contact_ghost2 {
 display: none;
 }
-
-
-
 
 .pave_xp {
 	display: flex; 
@@ -94,11 +96,9 @@ display: none;
 .icons {
 	width: 90px; height: 90px; 
 	padding: 10px 10px 10px 10px;
-
-
 }
 
-
+/*Boxes Switch*/
 
 @media (max-width: 600px) {
 
@@ -125,22 +125,22 @@ display: none;
 
 	.pave_xp { 
 		flex-direction: column;
+
+
 	}
 
 }
 	
+/*Icon Switch*/
+
 @media (max-width: 1100px) {
 
 	.icons {
 		display: block;
 		margin-left: auto;
-		margin-right: auto;
-		
+		margin-right: auto;	
 	}
-
-
 	
-
 }
 
 
