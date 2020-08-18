@@ -30,6 +30,7 @@ table {
 td {
 	height: 100%;
 	vertical-align:bottom;
+	text-align: center;
 	padding: 0px ;
 } 
 
@@ -90,6 +91,12 @@ display: none;
 	min-width: 150px;
 }
 
+.icons {
+	width: 90px; height: 90px; 
+	padding: 10px 10px 10px 10px;
+
+
+}
 
 
 
@@ -120,6 +127,19 @@ display: none;
 		flex-direction: column;
 	}
 
+}
+	
+@media (max-width: 1100px) {
+
+	.icons {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+
+
+	
 
 }
 
