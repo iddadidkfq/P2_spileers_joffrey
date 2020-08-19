@@ -87,10 +87,17 @@ display: none;
 	display: flex; 
 	flex-direction: row;
 	flex-wrap: nowrap;
+	font-size: large;
+}
+
+
+.boite {
+	font-family: Arial, sans-serif
 }
 
 .box_m3_G {  
 	min-width: 150px;
+
 }
 
 .icons {
@@ -126,6 +133,9 @@ display: none;
 	.pave_xp { 
 		flex-direction: column;
 
+	}
+	.pave_xp p { 
+		text-align: center;
 
 	}
 
