@@ -66,9 +66,6 @@ td {
 
 .job {font-size: 1.8em;}
 
-.icons2 {width: 20px; height: 20px;}
-
-
 /* Boxes Unswitch */
 
 .img_ghost2 {
@@ -100,8 +97,7 @@ display: none;
 
 }
 
-.icons {
-	width: 90px; height: 90px; 
+.icons { 
 	padding: 10px 10px 10px 10px;
 }
 
