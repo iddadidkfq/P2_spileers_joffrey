@@ -11,6 +11,11 @@ hr {
     border: 1px solid #93b2e1;
 }
 
+ul {
+  list-style-type:circle;
+}
+
+
 #conteneur_global {
 	display: flex; 
 	flex-direction: row;
@@ -93,7 +98,7 @@ display: none;
 }
 
 .box_m3_G {  
-	min-width: 150px;
+	min-width: 200px;
 
 }
 
