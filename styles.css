@@ -15,7 +15,6 @@ ul {
   list-style-type:circle;
 }
 
-
 #conteneur_global {
 	display: flex; 
 	flex-direction: row;
@@ -23,28 +22,18 @@ ul {
 }
 
 #box_m1 {
-	display: flex; 
-	flex-direction: column;
+	position: relative;
 	background-color: #93b2e1;   
 	min-width: 35%;
-
 }
 
 .loisirs {
-	height: 100%;
-}
 
-table {
-	height: 100%;
 	width: 100%;
-} 
-
-td {
-	height: 100%;
-	vertical-align:bottom;
+	position: absolute;
+	bottom: 0px;
 	text-align: center;
-	padding: 0px ;
-} 
+}
 
 #box_m1 h2 {
 	text-align: center;
@@ -103,7 +92,7 @@ display: none;
 }
 
 .icons { 
-	padding: 5px 10px 10px 10px;
+	padding: 0px 10px 10px 10px;
 }
 
 /*Boxes Switch*/
@@ -131,13 +120,16 @@ display: none;
 		display: block;
 	}
 
+	.loisirs {
+		position: relative;
+	}
+
 	.pave_xp { 
 		flex-direction: column;
 
 	}
 	.pave_xp p { 
 		text-align: center;
-
 	}
 
 }
