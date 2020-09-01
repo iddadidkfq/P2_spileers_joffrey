@@ -15,28 +15,6 @@ li {
 	margin-left: 20px;
   	list-style-type:circle;
 }
-
-.img_ghost1  {	
-	display: block;
-	margin-top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-  	border-radius: 150px;	
-	width: 300px;
-	height: 300px;
-}
-    
-
-.img_ghost2  {	
-	display: block;
-	margin-top: 20px;
-	margin-left: auto;
-	margin-right: auto;
-  	border-radius: 150px;
-  	margin-bottom: 20px;	
-	width: 300px;
-	height: 300px;
-}
    
 #conteneur_global {
 	display: flex; 
@@ -48,13 +26,6 @@ li {
 	position: relative;
 	background-color: #93b2e1;   
 	min-width: 35%;
-}
-
-.loisirs {
-	width: 100%;
-	position: absolute;
-	bottom: 0px;
-	text-align: center;
 }
 
 #box_m1 h2 {
@@ -70,6 +41,28 @@ li {
 	display: block;
 }
 
+.img_ghost1  {	
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+  	border-radius: 150px;	
+	width: 300px;
+	height: 300px;
+}
+    
+
+.img_ghost2  {	
+	display: block;
+	margin-top: 20px;
+  	margin-bottom: 20px;	
+	margin-left: auto;
+	margin-right: auto;
+  	border-radius: 150px;
+	width: 300px;
+	height: 300px;
+}
+
 .prenom {
 	font-size: 3.0em;
 	font-weight: bold;
@@ -79,11 +72,20 @@ li {
 
 .nom {
 	font-size: 3.0em;
-	font-family: Arial, sans-serif;}
+	font-family: Arial, sans-serif;
+}
 
-.job {font-size: 1.8em;}
+.job {font-size: 1.8em;
+}
 
-/* Boxes Unswitch */
+.loisirs {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+}
+
+/*Settings pré Switch*/
 
 .img_ghost2 {
 	display: none;
@@ -119,13 +121,28 @@ li {
 	padding: 0px 10px 10px 10px;
 }
 
-/*Boxes Switch*/
+@media (max-width: 1100px) {
+
+/*Icons & Img imterm Switch*/
+	.icons {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+
+	.img_ghost1  {	
+  	border-radius: 100px;	
+	width: 200px;
+	height: 200px;
+	}
+	
+}
 
 @media (max-width: 600px) {
 
+/*Switch*/
 	#conteneur_global {
 		flex-direction: column-reverse;
-	
 	}
 
 	.img_ghost1 {
@@ -148,30 +165,12 @@ li {
 		position: relative;
 	}
 	
-	.title, .job {text-align: center;
-
-
+	.title, .job {
+		text-align: center;
 	}
 }
 	
-/*Icon Switch*/
 
-@media (max-width: 1100px) {
-
-	.icons {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;	
-	}
-
-
-	.img_ghost1  {	
-  	border-radius: 100px;	
-	width: 200px;
-	height: 200px;
-}
-	
-}
 
 
 
