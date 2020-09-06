@@ -87,16 +87,12 @@ li {
 
 /*Settings pré Switch*/
 
-.img_ghost2 {
+.img_ghost2, .contact_ghost2 {
 	display: none;
 }
 
 .contact_ghost1 {
 	display: block;
-}
-
-.contact_ghost2 {
-	display: none;
 }
 
 .pave_xp {
@@ -145,19 +141,11 @@ li {
 		flex-direction: column-reverse;
 	}
 
-	.img_ghost1 {
+	.img_ghost1, .contact_ghost1 {
 		display: none;
 	}
 
-	.img_ghost2 {
-		display: block;
-	}
-
-	.contact_ghost1 {
-		display: none;
-	}
-
-	.contact_ghost2 {
+	.img_ghost2, .contact_ghost2 {
 		display: block;
 	}
 
