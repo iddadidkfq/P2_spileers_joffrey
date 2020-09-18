@@ -85,12 +85,6 @@ li {
 	text-align: center;
 }
 
-
-@viewport {
-   width: device-width; /* largeur du viewport */
-   zoom: 1; /* zoom initial à 1.0 */
-}
-
 /*Settings pré Switch*/
 
 .img_ghost2, .contact_ghost2 {
