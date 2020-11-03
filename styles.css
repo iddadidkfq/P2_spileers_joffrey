@@ -11,9 +11,13 @@ hr {
     border: 1px solid #93b2e1;
 }
 
+.wtf {	
+    width: 10%;
+    border: 1px solid #93b2e1;
+}
+
 li {
 	margin-left: 20px;
-  	list-style-type:circle;
 }
    
 #conteneur_global {
@@ -38,7 +42,6 @@ li {
 	display: block;
 	background-color: none; 
 	padding: 20px;
-
 }
 
 .img_ghost1  {	
@@ -50,8 +53,7 @@ li {
   	border:5px solid black;	
 	width: 300px;
 	height: 300px;
-}
-    
+}  
 
 .img_ghost2  {	
 	display: block;
@@ -86,6 +88,39 @@ li {
 	bottom: 10px;
 	text-align: center;
 }
+
+.lieux {
+	padding: 0 0 0 35px;
+	
+}
+
+.maliste1 {
+	list-style-type: none;
+	font-family: Arial, sans-serif;
+
+}
+
+.maliste1::before {
+	padding: 0 20px 0 0;
+  	content: "\f192";
+	font-family: "Font Awesome 5 Free";
+
+}
+
+
+.malisten {
+	list-style-type: none;
+	font-family: Arial, sans-serif;
+
+}
+
+.malisten::before {
+	padding: 0 20px 0 0;
+  	content: "\f111";
+	font-family: "Font Awesome 5 Free";
+
+}
+
 
 /*Settings pré Switch*/
 
@@ -169,6 +204,21 @@ li {
 	
 	.title, .job {
 		text-align: center;
+	}
+
+	.lieux {
+	padding: 0 0 0 10px;
+	
+	}
+
+	.maliste1::before {
+	padding: 0 0 0 0;
+
+	}
+
+.malisten::before {
+	padding: 0 0 0 0;
+
 	}
 }
 	
