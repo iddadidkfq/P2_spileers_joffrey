@@ -5,7 +5,7 @@
 	<title>cv_oc</title>
 
   	<!-- kit fontawesome pour icones demandé par OC -->
-    	<script src="https://kit.fontawesome.com/39ca8d7fdb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/39ca8d7fdb.js" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	
@@ -17,13 +17,12 @@
 
 	<main id="conteneur_global">
 
-		<section id="box_m1">
-		
-		<!-- Image ghost 1/2-->	
-			<img class="img_ghost1" src="imgs/jeff_OC.jpg" alt="photo Joffrey">
+		<div id="colonne_1">	<!-- se déplace sous colonne 2 sur smarthone -->
+			<header>
+				<img id ="img_1"  class="image" src="imgs/jeff_OC.jpg" alt="photo Joffrey">   		<!-- non visible sur smartphone -->	
+			</header>
 
-		<!-- Contact ghost 1/2-->
-			<header class="contact_ghost1">
+			<section id="contact_1">		<!-- non visible sur smartphone -->
 
 				<h2>CONTACT</h2>
 				<p>Adresse :</p><p>Toulouse, France</p>
@@ -32,133 +31,123 @@
 				<p>Site web : </p><p>www.ufxpro.com</p>
 				<p>Skype : </p><p>xxx@jeff_spileers</p>
 
-			</header>
+			</section>
 
-		<!-- Infos courantes -->
-			<aside>
+			<section>
 
 				<h2>A PROPOS DE MOI</h2>
 				<p>Après avoir passé de nombreuses années dans divers métiers liès à la sécurité j'ai souhaité me reconvertir dans une autre branche. Attiré par l'aspect créatif & le fait de pouvoir résoudre des problèmes complexes... ou pas, j'ai choisi de m'orienter vers la programmation. </p>
 
-			</aside>	
+			</section>	
 
-		<!-- Icones Loisir -->
-			<footer class="loisirs">
+			<footer id="loisirs">
 			
 				<h2>LOISIRS</h2>
 
 				<span class="fa-stack fa-4x">
-				<i class="fa fa-circle-thin fa-stack-2x"></i>
-			 	<i class="fas fa-coffee fa-1x"></i>
+					<i class="fa fa-circle-thin fa-stack-2x"></i>
+				 	<i class="fas fa-coffee fa-1x"></i>
 			 	</span>
 
 			 	<span class="fa-stack fa-4x">
-				<i class="fa fa-circle-thin fa-stack-2x"></i>
-			 	<i class="fab fa-teamspeak fa-1x"></i>
+					<i class="fa fa-circle-thin fa-stack-2x"></i>
+				 	<i class="fab fa-teamspeak fa-1x"></i>
 			 	</span>	
 
 			 	<span class="fa-stack fa-4x">
-				<i class="fa fa-circle-thin fa-stack-2x"></i>
-				<i class="fas fa-glass-cheers fa-1x"></i>
+					<i class="fa fa-circle-thin fa-stack-2x"></i>
+					<i class="fas fa-glass-cheers fa-1x"></i>
 				</span>
 
 			</footer>
 
-		</section>
+		</div>
 
-		<section id="box_m2">
+		<div id="colonne_2">
 			
 			<header>
-		<!-- Image ghost 2/2-->
-				<img class="img_ghost2" src="imgs/jeff_OC.jpg" alt="photo Joffrey">
+				<img id="img_2" class="image" src="imgs/jeff_OC.jpg" alt="photo Joffrey">  <!-- visible seulement sur smartphone -->
 			
-		<!-- ID -->
-				<div class="title">
+				<div class="title">		<!-- toujours visible -->
 					
-					<span class="prenom">
-						JOFFREY
-					</span>
-					<span class="nom">
-						SPILEERS
-					</span>
+					<h1>
+						<span class="prenom">JOFFREY </span>SPILEERS
+					</h1>
 					<p class="job">Contractor Web Dev</p>
-					<hr align="left" class="wtf">
+					<hr class="hr2">
 				</div>
-
-		<!-- Contact ghost 2/2-->
-				<article class="contact_ghost2">
-
-					<h2>
-					<i class="far fa-id-card"></i>
-					CONTACT
-					</h2>
-					<hr>
-
-					<p>Adresse :</p><p>Toulouse, France</p>
-					<p>Téléphone :</p><p>xxx</p>
-					<p>Email :</p><p>j.s8592@gmail.com</p>
-					<p>Site web : </p><p>xxx</p>
-					<p>Skype : </p><p>xxx@jeff_spileers</p>
-
-				</article>
 			</header>
+			<section id="contact_2">		 <!-- visible seulement sur smartphone -->
 
-		<!-- Formation -->
+				<h2>
+				<i class="far fa-id-card"></i>
+				CONTACT
+				</h2>
+				<hr>
 
+				<p>Adresse :</p><p>Toulouse, France</p>
+				<p>Téléphone :</p><p>xxx</p>
+				<p>Email :</p><p>j.s8592@gmail.com</p>
+				<p>Site web : </p><p>xxx</p>
+				<p>Skype : </p><p>xxx@jeff_spileers</p>
+
+			</section>
+
+			<section>
 				<h2>
 					<i class="fas fa-tools"></i> FORMATION
 				</h2>
 				<hr>
+				<article class="pave_xp_form">
 
-				<div class="pave_xp">
-
-					<div class="box_m3_G">
+					<div class="xp_form_year">
 						<ul><li class="maliste1">
 							2020-2021<p class="lieux">Toulouse</p>
 						</li></ul>
 					</div>
 
-					<div class="box_m3_D">
+					<div class="xp_form_description">
 						<p>Openclassrooms</p>
 						<p>Web Developer</p>
 						<p>Formation en cours.</p>
 					</div>		
 				
-				</div>
+				</article>
 
-				<div class="pave_xp">
+				<article class="pave_xp_form">
 
-					<div class="box_m3_G">
+					<div class="xp_form_year">
 						<ul><li class="malisten">
 							2014<p class="lieux">Paris</p>
 						</li></ul>
 					</div>
 
-					<div class="box_m3_D">
+					<div class="xp_form_description">
 						<p>CREFOPS</p>
 						<p>SSIAP 2</p>
 						<p>Diplome de Chef d'équipe des services de sécurité incendie et d'assistance à personnes. </p>
 					</div>		
 				
-				</div>
+				</article>
 				
-				<div class="pave_xp">
+				<article class="pave_xp_form">
 
-					<div class="box_m3_G">
+					<div class="xp_form_year">
 						<ul><li class="malisten">
 							2013<p class="lieux">Paris</p>
 						</li></ul>
 					</div>
 
-					<div class="box_m3_D">
+					<div class="xp_form_description">
 						<p>CREFOPS</p>
 						<p>IGH 1 & ERP 1</p>
 						<p>Qualification d'Agent de sécurité incendie avec spécialisation pour les immeubles de grande hauteur (IGH) et pour les etablissements recevant du public (ERP).</p>
 					</div>		
 				
-				</div>
+				</article>
 
-			<!-- XP Pro -->
+			</section>
+			<section>
 
 				<h2>
 					<i class="fas fa-toolbox"></i>
@@ -166,57 +155,55 @@
 				</h2>
 				<hr>
 
-				<div class="pave_xp">
+				<article class="pave_xp_form">
 					
-					<div class="box_m3_G">
+					<div class="xp_form_year">
 						<ul><li class="maliste1">
 							2020<p class="lieux">Toulouse</p>
 						</li></ul>
 					</div>
 
-					<div class="box_m3_D">
+					<div class="xp_form_description">
 						<p>Belle Epoque Dolls</p>
 						<p>Web Dev.</p>
 						<p>Optimisation du site Web existant selon les demandes du client.</p>
 					</div>		
 					
-				</div>
+				</article>
 
-				<div class="pave_xp">
+				<article class="pave_xp_form">
 					
-					<div class="box_m3_G">
+					<div class="xp_form_year">
 						<ul><li class="malisten">
-							2014-2020<p class="lieux">Paris, Toulouse</p>
+							2014-2020<p class="lieux">Paris, <br />Toulouse</p>
 						</li></ul>
 					</div>
 
-					<div class="box_m3_D">
+					<div class="xp_form_description">
 						<p>Diverses sociétés de sécurité</p>
 						<p>Chef d'équipe de Sécurité Incendie</p>
 						<p>Management d'équipes de sécurité, formation du personnel en matière de sécurité incendie, assurer la sécurité des biens et des personnes, gestion du PC Sécurité en situation de crise, planification, etc...</p>
 						<br>
 					</div>		
 				
-				</div>
-				
-		<!-- Recommandations -->
-
-			<aside>
-				<article>		
-
-					<h2>
-						<i class="far fa-thumbs-up"></i>
-						RECOMMANDATIONS
-					</h2>
-					<hr>
-
-					<p>Vangenechten Fabienne, Directeur de Belle Epoque Dolls</p>
-					<p>Phone n°: XXXXXXX </p>
-					<p>Mail : XXXXXX</p>
-
 				</article>
-			</aside>
-		</section>
+				
+			</section>
+
+			<section>	
+
+				<h2>
+					<i class="far fa-thumbs-up"></i>
+					RECOMMANDATIONS
+				</h2>
+				<hr>
+
+				<p>Vangenechten Fabienne, Directeur de Belle Epoque Dolls</p>
+				<p>Phone n°: XXXXXXX </p>
+				<p>Mail : XXXXXX</p>
+
+			</section>
+		</div>
 	</main>
 </body>
 </html>

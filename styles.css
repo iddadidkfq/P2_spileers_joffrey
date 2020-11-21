@@ -1,4 +1,8 @@
 /* Globals*/
+h1 {
+	font-size: 3.0em;
+	font-family: Arial, sans-serif;
+}
 
 p {
 	font-family: Arial, sans-serif;
@@ -6,45 +10,45 @@ p {
 	text-align: justify; 
 }
 
+li {
+	margin-left: 20px;
+}
+
 hr {
     width: 100%;
     border: 1px solid #93b2e1;
 }
 
-.wtf {	
+.hr2 {	
     width: 10%;
-    border: 1px solid #93b2e1;
+    margin-left: 0px ;
 }
 
-li {
-	margin-left: 20px;
-}
-   
 #conteneur_global {
 	display: flex; 
 	flex-direction: row;
 	flex-wrap: nowrap;
 }
 
-#box_m1 {
+#colonne_1 {
 	position: relative;
 	background-color: #93b2e1;
 	max-width: 35% ;
 }
 
-#box_m1 h2 {
+#colonne_1 h2 {
 	text-align: center;
 	background-color:  #001b44 ;
 	color: #93b2e1;
 }
 
-#box_m2 {
+#colonne_2 {
 	display: block;
-	background-color: none; 
+	background-color: transparent;
 	padding: 20px;
 }
 
-.img_ghost1  {	
+.image {	
 	display: block;
 	margin-top: 20px;
 	margin-left: auto;
@@ -55,49 +59,50 @@ li {
 	height: 300px;
 }  
 
-.img_ghost2  {	
-	display: block;
-	margin-top: 20px;
-  	margin-bottom: 20px;	
-	margin-left: auto;
-	margin-right: auto;
-  	border-radius: 150px;
-  	border:5px solid black;
-	width: 300px;
-	height: 300px;
+
+#img_2, #contact_2 {		/* uniquement sur smartphone*/
+	display: none;
 }
 
-.prenom {
-	font-size: 3.0em;
-	font-weight: bold;
-	font-family: Arial, sans-serif;
-	color: #93b2e1;
-}
-
-.nom {
-	font-size: 3.0em;
-	font-family: Arial, sans-serif;
-}
-
-.job {font-size: 1.8em;
-}
-
-.loisirs {
+#loisirs {
 	width: 100%;
 	position: absolute;
 	bottom: 10px;
 	text-align: center;
 }
 
+.prenom {
+	font-weight: bold;
+	color: #93b2e1;
+}
+
+.job {font-size: 1.8em;
+}
+
+.pave_xp_form {
+	display: flex;
+	flex-direction: row ;	
+	font-size: large;
+	padding-bottom: 20px;
+}
+
+.xp_form_year {  
+	min-width: 	200px;
+	vertical-align: top;	
+}
+
+.xp_form_description {
+	padding-left: 20px;
+	width: 	65%;
+}
+
 .lieux {
-	padding: 0 0 0 35px;
-	
+	padding: 0 0 0 35px;	
 }
 
 .maliste1 {
 	list-style-type: none;
 	font-family: Arial, sans-serif;
-
 }
 
 .maliste1::before {
@@ -107,68 +112,34 @@ li {
 
 }
 
-
 .malisten {
 	list-style-type: none;
 	font-family: Arial, sans-serif;
-
 }
 
 .malisten::before {
 	padding: 0 20px 0 0;
   	content: "\f111";
 	font-family: "Font Awesome 5 Free";
-
 }
-
-
-/*Settings pré Switch*/
-
-.img_ghost2, .contact_ghost2 {
-	display: none;
-}
-
-.contact_ghost1 {
-	display: block;
-}
-
-.pave_xp {
-	display: flex;
-	flex-direction: row ;	
-	font-size: large;
-	padding-bottom: 20px;
-}
-
-.box_m3_G {  
-	min-width: 	200px;
-	vertical-align: top;
-	
-}
-
-.box_m3_D {
-	padding-left: 20px;
-	width: 	65%;
-}
-
 
 
 @media (max-width: 1100px) {
 
 /*Img imterm Switch*/
 	
-	.img_ghost1  {	
+	.image  {	
   	border-radius: 100px;	
 	width: 200px;
 	height: 200px;
-	}
-	
+	}	
 
-	.pave_xp {
+	.pave_xp_form {
 		flex-direction: column;	
 
 	}
 
-	.box_m3_D {
+	.xp_form_description {
 		width: 	100%;
 	}
 
@@ -176,29 +147,28 @@ li {
 
 @media (max-width: 600px) {
 
-/*Switch*/
+/*Switch - pour smartphone */
 	#conteneur_global {
 		flex-direction: column-reverse;
 	}
 
-	#box_m1 {
+	#colonne_1 {
 		max-width: 100% ;
 	}
 
-	#box_m2 {
+	#colonne_2 {
 		max-width: 100% ;
 	}
 
-
-	.img_ghost1, .contact_ghost1 {
+	#img_1, #contact_1 {
 		display: none;
 	}
 
-	.img_ghost2, .contact_ghost2 {
+	#img_2, #contact_2 {
 		display: block;
 	}
 
-	.loisirs {
+	#loisirs {
 		position: relative;
 	}
 	
@@ -216,7 +186,7 @@ li {
 
 	}
 
-.malisten::before {
+	.malisten::before {
 	padding: 0 0 0 0;
 
 	}
